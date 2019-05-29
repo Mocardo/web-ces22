@@ -1,5 +1,3 @@
-from selenium import webdriver
+import django
 
-browser = webdriver.Chrome()
-browser.get('http://localhost:8000')
-assert 'Django' in browser.title
+django.get_version()
